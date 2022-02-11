@@ -9,7 +9,7 @@ const Navbar = () => {
 	return (
 		<Wrapper>
 			<div className='nav-center'>
-				<button className='toggle-btn' onClick={toggleSidebar}>
+				<button type='button' className='toggle-btn' onClick={toggleSidebar}>
 					<FaAlignLeft />
 				</button>
 				<div>
@@ -25,11 +25,8 @@ const Navbar = () => {
 						{user?.name}
 						<FaCaretDown />
 					</button>
-					<div className={`showLogout ? 'dropdown show-dropdown' : 'dropdown'`}>
-						<button
-							type='button'
-							className='dropdown-btn'
-							onClick={() => logoutUser()}>
+					<div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
+						<button type='button' className='dropdown-btn' onClick={logoutUser}>
 							logout
 						</button>
 					</div>

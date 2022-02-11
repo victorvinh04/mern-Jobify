@@ -2,7 +2,6 @@ import React from 'react';
 import Wrapper from '../../assets/wrappers/DashboardFormPage';
 import { useAppContext } from '../../context/appContext';
 import { Alert, FormRow, FormRowSelect } from '../../components';
-import { toast } from 'react-toastify';
 const AddJob = () => {
 	const {
 		isEditing,
@@ -18,7 +17,6 @@ const AddJob = () => {
 		handleChange,
 		clearValues,
 		createJob,
-		alertText,
 		editJob,
 	} = useAppContext();
 
