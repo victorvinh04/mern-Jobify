@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const connectDB = (url) => {
+const connectDB = async (url) => {
 	return mongoose.connect(url);
 };
 
